@@ -1,5 +1,10 @@
 # Crowdin Editor Anywhere
 
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/crowdin/editor-anywhere?cacheSeconds=5000&logo=github)](https://github.com/crowdin/editor-anywhere/releases/latest)
+[![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/crowdin/editor-anywhere?cacheSeconds=1000&logo=jsdelivr)](#)
+[![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hy/crowdin/editor-anywhere?cacheSeconds=4000&logo=jsdelivr)](#)
+[![GitHub](https://img.shields.io/github/license/crowdin/editor-anywhere?cacheSeconds=20000)](https://github.com/crowdin/editor-anywhere/blob/master/LICENSE)
+
 Plugin to any website that allows to search selected text in the Crowdin project and translate it in-place
 
 # Usage
@@ -16,13 +21,17 @@ Set this URL as parameter.
 
 **Tip:** Provide URL to the language that matches your website current language
 
-    editorAnywhere.url = '{{url}}';
+```javascript
+editorAnywhere.url = '{{url}}';
+```
 
 Always run `init` method
 
-    editorAnywhere.init(function() {
-        // custom callback
-    });
+```javascript
+editorAnywhere.init(function() {
+    // custom callback
+});
+```
 
 If translation mode was already turned on before page reloading, it will initialize the plugin. 
 
@@ -32,9 +41,11 @@ Create a toggle button on your side.
 
 When user enables translation mode, use method `turnOn`
 
-    editorAnywhere.turnOn(function() {
-        // custom callback
-    });
+```javascript
+editorAnywhere.turnOn(function() {
+    // custom callback
+});
+```
 
 Plugin will remain enabled even when page reloads.
 
@@ -44,9 +55,11 @@ Create a toggle button on your side.
 
 When user disables translation mode, use method `turnOff`
 
-    editorAnywhere.turnOff(function() {
-        // custom callback
-    });
+```javascript
+editorAnywhere.turnOff(function() {
+    // custom callback
+});
+```
 
 Page will reload.
 
@@ -54,6 +67,36 @@ Page will reload.
 
 Use `isEnabled` method.
 
-    var isEnabled = editorAnywhere.isEnabled();
+```javascript
+var isEnabled = editorAnywhere.isEnabled();
+```
 
 It can be useful if there is one button to toggle translation mode.
+
+## Contribution
+
+We are happy to accept contributions to the Crowdin Editor Anywhere. To contribute please do the following:
+
+1. Fork the repository on GitHub.
+2. Decide which code you want to submit. Commit your changes and push to the new branch.
+3. Ensure that your code adheres to standard conventions, as used in the rest of the library.
+4. Submit a pull request with your patch on Github.
+
+## Seeking Assistance
+
+If you find any problems or would like to suggest a feature, please feel free to file an issue on Github at [Issues Page](https://github.com/crowdin/editor-anywhere/issues).
+
+Need help working with Crowdin Editor Anywhere or have any questions?
+[Contact Customer Success Service](https://crowdin.com/contacts).
+
+## License
+
+<pre>
+The Crowdin Editor Anywhere is licensed under the MIT License.
+See the LICENSE file distributed with this work for additional
+information regarding copyright ownership.
+
+Except as contained in the LICENSE file, the name(s) of the above copyright
+holders shall not be used in advertising or otherwise to promote the sale,
+use or other dealings in this Software without prior written authorization.
+</pre>
