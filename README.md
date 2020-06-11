@@ -8,7 +8,7 @@ When enabled, your website users can select any text on the page, and click Sear
 
 ## Init
 
-Add `<script src="https://cdn.jsdelivr.net/gh/crowdin/editorAnywhere/editorAnywhere.js"></script>` to your site.
+Add `<script src="https://cdn.jsdelivr.net/gh/crowdin/editorAnywhere@1.0/editorAnywhere.js"></script>` to your site.
 
 Generate URLs to Crowdin Editor on your side with appropriate languages to translate.
 
