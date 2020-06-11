@@ -4,6 +4,8 @@ Plugin to any website that allows to search selected text in the Crowdin project
 
 # Usage
 
+When enabled, your website users can select any text on the page, and click Search button. Then, Crowdin Editor opens in the popup, and user can translate strings found in connected Crowdin project, or review translations.
+
 ## Init
 
 Add `<script src="https://cdn.jsdelivr.net/gh/crowdin/editorAnywhere/editorAnywhere.js"></script>` to your site.
