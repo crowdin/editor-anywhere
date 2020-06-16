@@ -13,12 +13,10 @@ var editorAnywhere = {
   },
 
   turnOff: function(callback) {
-    if(localStorage.getItem('translation-mode')) {
-      localStorage.setItem('translation-mode', 0);
+    localStorage.setItem('translation-mode', 0);
 
-      callback && callback();
-      window.location.reload();
-    }
+    callback && callback();
+    window.location.reload();
   },
 
   init: function(callback) {
