@@ -14,7 +14,7 @@ var editorAnywhere = {
 
   turnOff: function(callback) {
     if(localStorage.getItem('translation-mode')) {
-      localStorage.removeItem('translation-mode');
+      localStorage.setItem('translation-mode', 0);
 
       callback && callback();
       window.location.reload();
@@ -73,7 +73,18 @@ var editorAnywhere = {
   },
 
   isEnabled: function() {
-    return Boolean(localStorage.getItem('translation-mode'));
+    return this.getState() === 'enabled';
+  },
+  
+  getState: function() {
+    switch(localStorage.getItem('translation-mode')) {
+      case '1':
+        return 'enabled';
+      case '0':
+        return 'disabled';
+      default:
+        return 'undefined';
+    }
   },
 
   initDrags: function() {
